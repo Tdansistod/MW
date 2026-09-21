@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mantenimiento Waltersdorf — Pintura, arreglos y albañilería</title>
+<meta name="description" content="Pintura interior y exterior, impermeabilización, reparación de cortinas, hidrolavado de frentes, durlock, yeso y colocación de pisos. Pedí tu presupuesto por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="logo" viewBox="0 0 128 128">
+    <rect width="128" height="128" rx="22" fill="#000000"/>
+    <path d="M54.85,20.96 L56.48,10.53 L71.52,10.53 L73.15,20.96 L87.96,27.10 L96.50,20.87 L107.13,31.50 L100.90,40.04 L107.04,54.85 L117.47,56.48 L117.47,71.52 L107.04,73.15 L100.90,87.96 L107.13,96.50 L96.50,107.13 L87.96,100.90 L73.15,107.04 L71.52,117.47 L56.48,117.47 L54.85,107.04 L40.04,100.90 L31.50,107.13 L20.87,96.50 L27.10,87.96 L20.96,73.15 L10.53,71.52 L10.53,56.48 L20.96,54.85 L27.10,40.04 L20.87,31.50 L31.50,20.87 L40.04,27.10 Z" fill="#FFC800" stroke="#FFC800" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="64" cy="64" r="28" fill="#000000"/>
+    <path d="M69,43 L52,67 L63,67 L58,86 L76,60 L65,60 Z" fill="#FFC800" stroke="#FFC800" stroke-width="2" stroke-linejoin="round"/>
+  </symbol>
+</svg>
+
+<a class="skip" href="#servicios">Ir a los servicios</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Inicio">
+      <svg class="logo" aria-hidden="true"><use href="#logo"/></svg>
+      <span class="wordmark" data-brand>Mantenimiento Waltersdorf</span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#trabajos" data-nav="trabajos" hidden>Trabajos</a>
+      <a href="#como-trabajamos">Cómo trabajamos</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn small" data-wa="Hola! Quiero pedir un presupuesto." href="#contacto">Pedir presupuesto</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 class="display">Pintura, arreglos y obras para tu casa o local.</h1>
+        <p class="lead">Pintamos, impermeabilizamos, reparamos y construimos. Vos nos contás qué necesitás y nosotros lo resolvemos.</p>
+        <div class="actions">
+          <a class="btn" data-wa="Hola! Quiero pedir un presupuesto." href="#contacto">Pedir presupuesto</a>
+          <a class="btn ghost" href="#servicios">Ver servicios</a>
+        </div>
+        <p class="note">Mandanos fotos por WhatsApp y te decimos cómo lo resolvemos.</p>
+      </div>
+
+      <figure class="ba-figure">
+        <div class="ba" id="ba">
+          <div class="layers" id="ba-layers"></div>
+
+          <span class="chip l">Después</span>
+          <span class="chip r">Antes</span>
+          <span class="bar"></span>
+          <span class="grip" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg>
+          </span>
+          <input id="ba-range" type="range" min="0" max="100" step="0.1" value="55" aria-label="Deslizá para comparar la pared antes y después">
+        </div>
+        <div class="picker" id="hero-picker" role="group" aria-label="Elegir trabajo" hidden></div>
+        <figcaption id="ba-cap">Ilustración: deslizá para ver el antes y el después.</figcaption>
+        <div class="ed" id="hero-ed">
+          <h3>Antes y después del hero</h3>
+          <p class="ed-hint">Usá la misma toma para el antes y el después. Si no cargás ninguno, se muestra la ilustración.</p>
+          <ul class="ed-list" id="hero-list"></ul>
+          <div class="ed-form">
+            <div class="field"><label for="hp-title">Título del trabajo</label><input id="hp-title" list="svc-list" type="text" placeholder="Ej: Pintura exterior"></div>
+            <div class="field"><label for="hp-before">Foto del antes</label><input id="hp-before" type="file" accept="image/*"></div>
+            <div class="field"><label for="hp-after">Foto del después</label><input id="hp-after" type="file" accept="image/*"></div>
+            <button class="btn small" type="button" id="hp-add" disabled>Agregar al hero</button>
+            <p class="ed-note" id="hp-note" role="status"></p>
+          </div>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <div class="hazard" aria-hidden="true"></div>
+
+  <section class="services" id="servicios">
+    <div class="wrap">
+      <h2 class="display h2">Qué hacemos</h2>
+      <p class="intro">Pintura, mantenimiento y albañilería: un solo contacto para todo el trabajo.</p>
+
+      <div class="groups">
+        <div class="group">
+          <div class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="15" height="6" rx="1"/><path d="M18 6h3v6H12v3"/><rect x="10" y="15" width="4" height="6" rx="1"/></svg>
+            <h3 class="display">Pintura</h3>
+          </div>
+          <ul class="svc">
+            <li>
+              <h4>Pintura interior</h4>
+              <p>Paredes y techos de casas, departamentos y locales.</p>
+              <a class="ask" href="#contacto" data-service="Pintura interior">Consultar</a>
+            </li>
+            <li>
+              <h4>Pintura exterior</h4>
+              <p>Frentes, medianeras, rejas y aberturas.</p>
+              <a class="ask" href="#contacto" data-service="Pintura exterior">Consultar</a>
+            </li>
+            <li>
+              <h4>Impermeabilización</h4>
+              <p>Terrazas, techos y muros con humedad o filtraciones.</p>
+              <a class="ask" href="#contacto" data-service="Impermeabilización">Consultar</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="group">
+          <div class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            <h3 class="display">Mantenimiento general</h3>
+          </div>
+          <ul class="svc">
+            <li>
+              <h4>Reparación de cortinas</h4>
+              <p>Arreglo de cortinas de enrollar, persianas y cortinas de local.</p>
+              <a class="ask" href="#contacto" data-service="Reparación de cortinas">Consultar</a>
+            </li>
+            <li>
+              <h4>Hidrolavado de frentes</h4>
+              <p>Limpieza a presión de frentes, veredas y fachadas.</p>
+              <a class="ask" href="#contacto" data-service="Hidrolavado de frentes">Consultar</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="group">
+          <div class="group-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 10h18M3 15h18M9 4v6M15 10v5M9 15v5"/></svg>
+            <h3 class="display">Albañilería</h3>
+          </div>
+          <ul class="svc">
+            <li>
+              <h4>Durlock y yeso</h4>
+              <p>Tabiques, cielorrasos y terminaciones en placa y yeso.</p>
+              <a class="ask" href="#contacto" data-service="Durlock y yeso">Consultar</a>
+            </li>
+            <li>
+              <h4>Colocación de pisos</h4>
+              <p>Cerámicos, porcelanato y otros pisos, con la base bien preparada.</p>
+              <a class="ask" href="#contacto" data-service="Colocación de pisos">Consultar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="more">
+        <p>¿Tu trabajo no está en la lista? Escribinos igual y lo vemos.</p>
+        <a class="btn" href="#contacto" data-service="Otro trabajo">Consultar por otro trabajo</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="trabajos" hidden>
+    <div class="wrap">
+      <h2 class="display h2">Trabajos realizados</h2>
+      <p class="intro">Algunos de los trabajos que hicimos. Tocá una foto para verla más grande.</p>
+
+      <div class="ed" id="g-ed">
+        <h3>Fotos de la galería</h3>
+        <div class="ed-row">
+          <div class="field">
+            <label for="g-cat">Categoría de las fotos nuevas</label>
+            <select id="g-cat">
+              <option value="pintura">Pintura</option>
+              <option value="mantenimiento">Mantenimiento</option>
+              <option value="albanileria">Albañilería</option>
+            </select>
+          </div>
+          <label class="btn small" id="g-add-label">Agregar fotos<input id="g-add" type="file" accept="image/*" multiple class="sr"></label>
+        </div>
+        <p class="ed-hint">Podés elegir varias a la vez. Se achican solas para que la página cargue rápido.</p>
+        <p class="ed-note" id="g-note" role="status"></p>
+      </div>
+
+      <div class="filters" id="g-filters" role="group" aria-label="Filtrar por tipo de trabajo" hidden></div>
+      <ul class="grid" id="g-grid"></ul>
+      <p class="g-empty" id="g-empty" hidden>Todavía no hay fotos. Agregá las primeras con el botón de arriba.</p>
+    </div>
+  </section>
+
+  <section class="process" id="como-trabajamos">
+    <div class="wrap">
+      <h2 class="display h2">Cómo trabajamos</h2>
+      <ol class="steps">
+        <li>
+          <span class="n display" aria-hidden="true">1</span>
+          <h3>Nos contás qué necesitás</h3>
+          <p>Escribinos por WhatsApp y mandanos fotos del lugar.</p>
+        </li>
+        <li>
+          <span class="n display" aria-hidden="true">2</span>
+          <h3>Vemos el trabajo</h3>
+          <p>Si hace falta, pasamos a medir y revisar el estado de las superficies.</p>
+        </li>
+        <li>
+          <span class="n display" aria-hidden="true">3</span>
+          <h3>Te pasamos el presupuesto</h3>
+          <p>Con el detalle de trabajos, materiales y plazos.</p>
+        </li>
+        <li>
+          <span class="n display" aria-hidden="true">4</span>
+          <h3>Hacemos y entregamos</h3>
+          <p>Realizamos la obra, dejamos limpio y revisamos todo juntos.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <div class="wrap contact-grid">
+      <div>
+        <h2 class="display h2">Pedí tu presupuesto</h2>
+        <p class="lead">Contanos qué querés hacer y en qué lugar. Te respondemos por WhatsApp.</p>
+        <ul class="contact-list">
+          <li><strong>WhatsApp y teléfono</strong><a data-wa="Hola! Quiero pedir un presupuesto." data-phone href="#">+54 9 11 4927-9441</a></li>
+          <li data-field="zone"><strong>Zona de trabajo</strong><span></span></li>
+          <li data-field="hours"><strong>Horario de atención</strong><span></span></li>
+        </ul>
+      </div>
+
+      <div class="composer">
+        <div class="field">
+          <label for="f-service">Trabajo</label>
+          <select id="f-service">
+            <option>Pintura interior</option>
+            <option>Pintura exterior</option>
+            <option>Impermeabilización</option>
+            <option>Reparación de cortinas</option>
+            <option>Hidrolavado de frentes</option>
+            <option>Durlock y yeso</option>
+            <option>Colocación de pisos</option>
+            <option>Otro trabajo</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-name">Tu nombre</label>
+          <input id="f-name" type="text" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="f-zone">Barrio o zona</label>
+          <input id="f-zone" type="text" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="f-detail">Contanos qué hay que hacer</label>
+          <textarea id="f-detail"></textarea>
+        </div>
+        <a class="btn" id="send" href="#" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+        <p class="hint">Se abre WhatsApp con tu mensaje listo para enviar. Después podés adjuntar fotos.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="brand">
+      <svg class="logo" aria-hidden="true"><use href="#logo"/></svg>
+      <span class="wordmark" data-brand>Mantenimiento Waltersdorf</span>
+    </div>
+    <small>© <span id="year">2026</span> <span data-brand>Mantenimiento Waltersdorf</span></small>
+  </div>
+</footer>
+
+<a class="btn fab" id="fab" data-wa="Hola! Quiero pedir un presupuesto." href="#contacto">WhatsApp</a>
+
+<button type="button" class="btn small edit-toggle" id="edit-toggle">Editar fotos</button>
+
+<div class="editbar" id="editbar">
+  <p id="eb-status" role="status">Sin cambios</p>
+  <div class="eb-actions">
+    <button type="button" class="btn small ghost" id="eb-close">Cerrar edición</button>
+    <button type="button" class="btn small" id="eb-save" disabled>Guardar y publicar</button>
+  </div>
+</div>
+
+<dialog id="lb" aria-label="Foto ampliada">
+  <div class="lb-in">
+    <img id="lb-img" alt="">
+    <p class="lb-cap" id="lb-cap"></p>
+    <button type="button" class="lb-btn lb-close" id="lb-close" aria-label="Cerrar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <button type="button" class="lb-btn lb-prev" id="lb-prev" aria-label="Foto anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button type="button" class="lb-btn lb-next" id="lb-next" aria-label="Foto siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+  </div>
+</dialog>
+
+<datalist id="svc-list">
+  <option value="Pintura interior"><option value="Pintura exterior"><option value="Impermeabilización">
+  <option value="Reparación de cortinas"><option value="Hidrolavado de frentes">
+  <option value="Durlock y yeso"><option value="Colocación de pisos">
+</datalist>
+
+<!-- Ilustración de ejemplo del comparador (se usa si no hay fotos cargadas) -->
+<template id="demo-scene">
+  <svg class="scene after" viewBox="0 0 500 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="light" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#fff" stop-opacity=".3"/>
+        <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <rect width="500" height="340" fill="#FFC800"/>
+    <g fill="#FFD84A" opacity=".55">
+      <rect x="34" width="58" height="340"/>
+      <rect x="176" width="58" height="340"/>
+      <rect x="318" width="58" height="340"/>
+      <rect x="446" width="54" height="340"/>
+    </g>
+    <rect width="500" height="340" fill="url(#light)"/>
+    <rect y="340" width="500" height="34" fill="#F4F4F1"/>
+    <rect y="372" width="500" height="4" fill="#CFCFC9"/>
+    <rect y="376" width="500" height="24" fill="#2B2B2B"/>
+    <rect x="392" y="170" width="34" height="52" rx="4" fill="#F4F4F1" stroke="#CFCFC9" stroke-width="2"/>
+    <rect x="403" y="184" width="12" height="24" rx="2" fill="#E1E1DB"/>
+  </svg>
+  <svg class="scene before" viewBox="0 0 500 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <radialGradient id="damp" cx=".2" cy=".95" r=".55">
+        <stop offset="0" stop-color="#5B564A" stop-opacity=".75"/>
+        <stop offset="1" stop-color="#5B564A" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="mold" cx=".92" cy=".04" r=".35">
+        <stop offset="0" stop-color="#3F3D36" stop-opacity=".6"/>
+        <stop offset="1" stop-color="#3F3D36" stop-opacity="0"/>
+      </radialGradient>
+      <filter id="grain" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="4"/>
+        <feColorMatrix type="saturate" values="0"/>
+      </filter>
+    </defs>
+    <rect width="500" height="340" fill="#B9B3A4"/>
+    <rect width="500" height="340" fill="url(#damp)"/>
+    <rect width="500" height="340" fill="url(#mold)"/>
+    <g stroke-linejoin="round">
+      <polygon points="318,58 372,44 396,92 358,124 322,104" fill="#D8D2C2" stroke="#8C8677" stroke-width="2"/>
+      <polygon points="336,74 366,68 376,92 352,106 334,96" fill="#9B968A"/>
+      <polygon points="96,150 150,138 170,178 130,204 92,182" fill="#D8D2C2" stroke="#8C8677" stroke-width="2"/>
+      <polygon points="112,160 142,154 152,178 128,192 108,178" fill="#9B968A"/>
+      <polygon points="196,262 226,254 240,282 214,300 190,286" fill="#CFC8B6" stroke="#8C8677" stroke-width="2"/>
+    </g>
+    <g fill="none" stroke="#3D3A34" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M250,0 L242,40 L262,78 L248,120 L270,165 L258,210 L280,262 L268,340"/>
+      <path d="M262,78 L292,92 L300,118"/>
+      <path d="M270,165 L236,182 L228,204"/>
+    </g>
+    <rect x="392" y="170" width="34" height="52" rx="4" fill="#D8CFA8" stroke="#A89F7A" stroke-width="2"/>
+    <rect x="403" y="184" width="12" height="24" rx="2" fill="#BDB48C"/>
+    <rect y="340" width="500" height="34" fill="#8F8A7D"/>
+    <rect y="372" width="500" height="4" fill="#6E6A5F"/>
+    <rect y="376" width="500" height="24" fill="#222"/>
+    <rect width="500" height="400" filter="url(#grain)" opacity=".22" style="mix-blend-mode:multiply"/>
+  </svg>
+</template>
+
+<!-- Fotos guardadas desde el modo edición -->
+<script type="application/json" id="site-data">{"hero":[],"gallery":[]}</script>
+<script src="app.js"></script>
+</body>
+</html>
